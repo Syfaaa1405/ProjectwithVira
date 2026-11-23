@@ -1,32 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman Utama</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="judulUtama">Halaman Awal</h1>
+      <h1 id="judulUtama">Halaman Awal</h1>
     </header>
 
     <nav><p>Beranda | Profil | Kontak</p></nav>
 
     <main>
-        <section class="kartu-profil">
-            <h2>Profil Siswa</h2>
-            <p>Selamat datang di halaman utama web kami</p>
-        </section>
+      <section class="kartu-profil">
+        <h2>Profil Siswa</h2>
+        <p>Selamat datang di halaman utama web kami</p>
+      </section>
+
+      <section>
+        <article id="kotak-pesan">
+          <h2>Pesan Informasi</h2>
+          <p id="pesanStatus">Sedang Memuat...</p>
+        </article>
+      </section>
     </main>
 
     <footer>
-        <p>Praktikum GitHub Kolaborasi</p>
+      <p>Praktikum GitHub Kolaborasi</p>
     </footer>
 
     <script>
-        const judul = document.getElementById("judulUtama");
-        judul.textContent = "Selamat Datang Siswa";
+      const judul = document.getElementById("judulUtama");
+      judul.textContent = "Selamat Datang Siswa";
+
+      const pesan = document.getElementById("pesanStatus");
+      pesan.textContent = "Data Berhasil Disimpan";
     </script>
-</body>
+  </body>
 </html>
